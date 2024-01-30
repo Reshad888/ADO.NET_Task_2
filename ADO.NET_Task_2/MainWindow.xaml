@@ -1,0 +1,62 @@
+﻿<Window x:Class="ADO.NET_Task_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ADO.NET_Task_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--StackPanel-->
+        <StackPanel Orientation = "Horizontal">
+            <!--TextBox for Search-->
+            <TextBox Name = "QueryTextBox"
+                 Height = "30"
+                 Width = "480"
+                 VerticalAlignment = "Top"
+                 Margin = "5"
+                 FontSize = "20">
+            </TextBox>
+
+            <!--Button for Search-->
+            <Button Name = "SearchButton"
+                    Height = "30"
+                    Width = "85"
+                    VerticalAlignment = "Top"
+                    Margin = "5"
+                    Content = "Search"
+                    FontSize = "18"
+                    FontWeight = "Bold" Click="SearchButton_Click">
+            </Button>
+
+            <!--Button for Update-->
+            <Button Name = "UpdateButton"
+                    Height = "30"
+                    Width="85"
+                    VerticalAlignment = "Top"
+                    Margin = "5"
+                    Content = "Update"
+                    FontSize = "18"
+                    FontWeight = "Bold" Click="UpdateButton_Click">
+            </Button>
+            
+            <!--Button for Authors-->
+            <Button Name = "AuthorsButton"
+                    Height = "30"
+                    Width = "85"
+                    VerticalAlignment = "Top"
+                    Margin = "5"
+                    Content = "Authors"
+                    FontSize = "18"
+                    FontWeight = "Bold" Click="AuthorsButton_Click">
+            </Button>
+        </StackPanel>
+
+        <!--DataGrid for Data-->
+        <DataGrid Name = "dataGrid"
+                  Height = "370"
+                  VerticalAlignment = "Bottom"
+                  AutoGenerateColumns = "True">
+        </DataGrid>
+    </Grid>
+</Window>
